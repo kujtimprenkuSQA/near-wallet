@@ -49,8 +49,7 @@ export function GuestLanding({ history, accountFound  }) {
                             <FormButton
                                 onClick={() => {
                                     recordWalletMigrationEvent('click', { element: { type: 'button', description: 'Learn More' }});
-                                    // TODO: find the link
-                                    window.open('', '_blank');
+                                    window.open('https://medium.com/nearprotocol/near-opens-the-door-to-more-wallets-255eee58eb97', '_blank');
                                 }}
                                 className='dark-gray-transparent'
                                 color='dark-gray-transparent'
@@ -92,8 +91,7 @@ export function GuestLanding({ history, accountFound  }) {
                                 <FormButton
                                     onClick={() => {
                                         recordWalletMigrationEvent('click', { element: { type: 'button', description: 'Learn More' }});
-                                        // TODO: find the link
-                                        window.open('', '_blank');
+                                        window.open('https://medium.com/nearprotocol/near-opens-the-door-to-more-wallets-255eee58eb97', '_blank');
                                     }}
                                     className='dark-gray-transparent'
                                     color='dark-gray-transparent'
