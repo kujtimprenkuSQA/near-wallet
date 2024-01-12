@@ -102,6 +102,7 @@ import {
     WALLET_SEND_MONEY_URL,
 } from '../utils/wallet';
 import '../index.css';
+import {initAnalytics} from "./wallet-migration/metrics";
 const { fetchTokenFiatValues, getTokenWhiteList } = tokenFiatValueActions;
 
 const {
@@ -222,6 +223,7 @@ class Routing extends Component {
             document.querySelector('link[rel~="icon"]').href = favicon;
         }
 
+        await initAnalytics();
         const {
             refreshAccount,
             handleRefreshUrl,
@@ -367,14 +369,14 @@ class Routing extends Component {
                             )
                         }
                         {
-                            
+
                             WEP_PHASE_ONE && (
                                 <Switch>
                                     <Route
                                         path={['/', '/staking', '/profile']} render={() => (
                                             <MigrationBanner
                                                 account={account}
-                                                onTransfer={this.handleTransferClick} 
+                                                onTransfer={this.handleTransferClick}
                                             />
                                         )}
                                     />
