@@ -140,8 +140,7 @@ export function GuestLanding({ history, accountFound  }) {
                             <FormButton
                                 onClick={() => {
                                     recordWalletMigrationEvent('click', { element: { type: 'button', description: 'Compare Wallets' }});
-                                    // TODO: find the link
-                                    window.open('', '_blank');
+                                    window.open('https://docs.google.com/spreadsheets/d/1JeF9ZKmg1IHvTlgIv0ymGNMIeps6khcr3ElfIpEJHGs/edit#gid=0', '_blank');
                                 }}
                                 className='dark-gray-transparent'
                                 color='dark-gray-transparent'
